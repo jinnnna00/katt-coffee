@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </head>
+<body class="admin">
+    <aside class="fixed_menu"></aside>
+    <div class="modal"></div>
+    <div class="popups">
+        <div class="popup_title">선택한 항목들을 삭제하시겠습니까?</div>
+        <div class="popup_ctl">
+            <span class="bk_btn_common yes" id="btn_delete_yes">네</span>
+            <span class="bk_btn_common popup_no" id="btn_delete_no">아니오</span>
+        </div>
+    </div>
+    <div class="header_wrap"></div>
+    <main>
+       <div class="sub_banner sub1">
+        <div class="ban_txt">
+            <h2>공지사항</h2>
+            <p>여러분과의 소통을 통해 더 나은 내일을 만들어가는 이야기, 지금 확인해 보세요</p>
+        </div>
+       </div>
+
+       <div class="commonframe option_bar">
+        <section>전체 <strong>25</strong>건 - <strong>1</strong>페이지</section>
+        <section class="option_admin">
+            <a href="#" class="btn_common" id="btn_delete">선택삭제</a>
+            <a href="/notice_write.html" class="btn_common">글쓰기</a>
+        </section>
+       </div>
+
+
+
+       <form action="#" class="commonframe notice_form">
+        <!-- 삭제하는 기능이 들어가야 하니까 폼태그로 해라 -->
+           <table class="list_table">
+                <thead>
+                <!--thead태그랑 tbody태그 나눠서 써줄수있다 tbody는 여러개 쓸 수 있다  -->
+                    <tr>
+                        <th class="cell_admin">
+                            <label for="all">
+                                <input type="checkbox" id="all">
+                                <span class="custom_checkbox"></span>
+                            </label>
+                        </th>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>날짜</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="cell_admin"><label for="n25" class="checkbox">
+                            <input type="checkbox" id="n25">
+                            <span class="custom_checkbox"></span>
+                        </label></td>
+                        <td>25</td>
+                        <td><a href="/notice_view.html">정기 휴무일 및 특별 영업시간 안내</a></td>
+                        <td>Katt coffee</td>
+                        <td>2024.11.27</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin"><label for="n24" class="checkbox">
+                            <input type="checkbox" id="n24">
+                            <span class="custom_checkbox"></span>
+                        </label></td>
+                        <td>24</td>
+                        <td><a href="/notice_view.html">멤버십 회원 대상 할인 이벤트</a></td>
+                        <td>Katt coffee</td>
+                        <td>2024.10.9</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin"><label for="n23" class="checkbox">
+                            <input type="checkbox" id="n23">
+                            <span class="custom_checkbox"></span>
+                        </label></td>
+                        <td>23</td>
+                        <td><a href="/notice_view.html"></a>새해 맞이 매장 리모델링 일정 안내</td>
+                        <td>Katt coffee</td>
+                        <td>2024.11.29</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin"><label for="n22" class="checkbox">
+                            <input type="checkbox" id="n22">
+                            <span class="custom_checkbox"></span>
+                        </label></td>
+                        <td>22</td>
+                        <td><a href="/notice_view.html">크리스마스 이벤트 및 사은품 증정 안내</a></td>
+                        <td>Katt coffee</td>
+                        <td>2024.11.27</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin"><label for="n21" class="checkbox">
+                            <input type="checkbox" id="n21">
+                            <span class="custom_checkbox"></span>
+                        </label></td>
+                        <td>21</td>
+                        <td><a href="/notice_view.html">11월 신메뉴 출시 안내</a></td>
+                        <td>Katt coffee</td>
+                        <td>2024.10.21</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin"><label for="n20" class="checkbox">
+                            <input type="checkbox" id="n20">
+                            <span class="custom_checkbox"></span>
+                        </label></td>
+                        <td>20</td>
+                        <td><a href="/notice_view.html">테라스 좌석 예약제 운영 안내</a></td>
+                        <td>Katt coffee</td>
+                        <td>2024.10.19</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin"><label for="n19" class="checkbox">
+                            <input type="checkbox" id="n19">
+                            <span class="custom_checkbox"></span>
+                        </label></td>
+                        <td>19</td>
+                        <td><a href="/notice_view.html">고객 설문조사 참여 감사 쿠폰 증정</a></td>
+                        <td>Katt coffee</td>
+                        <td>2024.9.18</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin"><label for="n18" class="checkbox">
+                            <input type="checkbox" id="n18">
+                            <span class="custom_checkbox"></span>
+                        </label></td>
+                        <td>18</td>
+                        <td><a href="#">가을 시즌 디저트 출시 및 한정 할인 안내</a></td>
+                        <td>Katt coffee</td>
+                        <td>2024.9.1</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin"><label for="n17" class="checkbox">
+                            <input type="checkbox" id="n17">
+                            <span class="custom_checkbox"></span>
+                        </label></td>
+                        <td>17</td>
+                        <td><a href="/notice_view.html">여름 한정 콜드브루 시리즈 출시 안내</a></td>
+                        <td>Katt coffee</td>
+                        <td>2024.7.15</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin"><label for="n16" class="checkbox">
+                            <input type="checkbox" id="n16">
+                            <span class="custom_checkbox"></span>
+                        </label></td>
+                        <td>16</td>
+                        <td><a href="/notice_view.html">고객 감사의 달 - 무료 리필 이벤트</a></td>
+                        <td>Katt coffee</td>
+                        <td>2024.6.2</td>
+                    </tr>
+                </tbody>
+            </table>
+       </form>
+       <div class="commonframe bbs_pagenation">
+            <a href="#" class="on">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+       </div>
+    </main>
+    <footer></footer>
+    <script>
+        let btn_delete = document.querySelector("#btn_delete")
+        let modal = document.querySelector(".modal")
+        let popups = document.querySelector(".popups")
+        let btn_delete_yes = document.querySelector("#btn_delete_yes")
+        let btn_delete_no = document.querySelector("#btn_delete_no")
+
+        btn_delete.addEventListener("click",function(event){
+            event.preventDefault()
+            // 태그가 갖는 기능이 막히게된다
+            // a태그 눌렀을때 위로 올라가는 기능 없애기
+            modal.classList.add("on")
+            popups.classList.add("on")
+        })
+
+        // 삭제 예스 눌렀을때 기능
+        btn_delete_yes.addEventListener("click",function(){
+            modal.classList.remove("on")
+            popups.classList.remove("on")
+        })
+
+        btn_delete_no.addEventListener("click",function(){
+            modal.classList.remove("on")
+            popups.classList.remove("on")
+        })
+
+    </script>
+    <script src="/js/include.js"></script>
+    <!-- 꼭 밑에 들어가야된다 -->
+</body>
+</html>

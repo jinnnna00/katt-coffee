@@ -1,0 +1,51 @@
+/* 처음으로 할 일 : 스타일 초기화 (각각의 태그들에게 설정되어있는 기본 스타일을 제거 우선순위 밀리지 않기위해) */
+*{
+    margin: 0; padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    /* 선택자에서 콤마-그룹선택자 : 같이 선택된다 */
+    /* html의 기본 글씨크기는 16px이고 h2의 기본설정은 부모태그에 1.5배 크기로 글씨크기 적용되어있으므로 24px이 적용되어있다 */
+    font-size: inherit; /*글씨크기를 부모태그에 적용된 글씨 크기로 적용하겠다 (=상속시키겠다)
+    html태그에 폰트사이즈를 지정해도 상속스타일이기 때문에 자식태그 직접적용되는게 우선이기 때문에 inherit을 설정해줘야 전체 글씨크기를 바꿀 수 있다.*/
+    font-weight: inherit;
+    /* 글씨 굵기 없애기 - normal로 설정하는 경우 해당되는 태그는 다른 굵기로 설정할 수 없고 설정하려면 직접선택해서 바꿔야 하기 때문에 번거로움 그래서 inherit써줌*/
+    /* 폰트관련설정만 inherit할 수 있다. 글씨와 관련된건 대부분 상속이 되기 때문에 */
+    /* 상속스타일로 설정하는 이유는 영역태그에 글씨관련 속성들을 지정했을 때 그 안에 자식태그나 자손태그 혹은 글자들의 글씨스타일을 한번에 적용 혹은 수정하기 편하게 하기 위해서이다 */
+    line-height: 1;
+    /* 제목은 행간을 1.4로하면 너무 크기 때문에 1.2정도로 줄여준다 */
+}
+strong, b{
+    font-weight: inherit;
+}
+i,em,address{
+    font-style: inherit;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: inherit; /*기본설정: underline으로 되어있음*/
+}
+img{
+    max-width: 100%;
+}
+input,textarea,option{
+    /* 선택했을 때 가장자리에 보더가 없어지는 소스코드 */
+    outline: 0;
+}
+table{
+    /* 셀 사이 간격 없애기 */
+    border-collapse: collapse;
+}
+form,label,input,select,option,textarea{
+    /* 입력하는 태그들 글자 상속받도록  */
+    font-family: inherit;
+    font-weight: inherit;
+}
+input[type="submit"]{
+    background-color: transparent;
+}
+input[type="reset"]{
+    background-color: transparent;
+}

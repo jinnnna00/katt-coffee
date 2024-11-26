@@ -1,0 +1,616 @@
+header{
+    /* border: 1px solid violet; */
+    /* 너비 기본 오토 설정해놨다 커먼에 */
+    height: 5rem;
+    background-color: var(--main-color);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    /* transition: all 0.3s ease 0s; */
+    z-index: 1000;
+}
+header:hover{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.582);
+    height: 24rem;
+}
+header:before{
+    /* 비포만들땐 컨텐트 속성을 만들어줘야한다 */
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 5rem);
+    left: 0;
+    top: 5rem;
+    background-color: white;
+    z-index: -1;
+}
+header .commonframe{
+    display: flex;
+    /* border: 1px solid blue; */
+    justify-content: space-between;
+}
+
+.logo{
+    /* border: 1px solid lime; */
+}
+.logo a{
+    display: block;
+}
+.logo a img{
+    height: 3rem;
+    width: 15rem;
+    padding-top: 1rem;
+}
+.gnb{
+    /* border: 1px solid pink; */
+    display: flex;
+    color: white;
+}
+.gnb>li{
+    /* border: 1px solid gray; */
+    margin-right: var(--space-middle);
+}
+.gnb>li:last-of-type{
+    margin-right: 0;
+}
+.gnb>li>a{
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.gnb>li>a:hover{
+    text-decoration: underline;
+}
+.gnb>li>ul{
+    margin-top: var(--space-small);
+    color: black;
+}
+.gnb>li>ul>li>a{
+    display: flex;
+    /* border: 1px solid yellow; */
+    height: 3rem;
+    align-items: center;
+}
+.gnb>li>ul>li>a:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+/* 만약에 헤더를 투명하게 만들었다면 아래를 before태그로 깔 필요가 없다
+선을 before로 만들어주면 된다
+header{
+?
+}
+header:before{
+top:.2rem;
+background-color: var(main-color)
+}
+*/
+
+.station1{
+    width: 100%;
+    height: 100vh;
+}
+/* .station1 img{
+    height: 100%;
+    object-fit: cover;
+} */
+ .station1{
+    height: auto;
+ }
+
+/* 개발자툴에서 복사해와서 우선순위점수 20점으로 만들어서 스타일 적용시키기 */
+.station1 .swiper-pagination-bullet {
+    width: 0.5rem;
+    height: 0.5rem;
+    display: inline-block;
+    border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+    background: white;
+    opacity:.8;
+}
+
+.station1 .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--main-color);
+}
+.type1{
+    margin-top: var(--space-large);
+    display: flex;
+    gap: 4rem;
+}
+.type1>figure{
+    flex: 1;
+}
+.type1>section{
+    flex: 1;
+}
+.pt100{
+    padding-top: 5rem;
+    margin-bottom: var(--space-middle);
+}
+.type1 h2{
+    margin-bottom: var(--space-middle);
+}
+.type1 h3{
+    margin-bottom: var(--space-small);
+}
+.type1 h4{
+    margin-bottom: var(--space-small);
+}
+.type1 p{
+    margin-bottom: var(--space-small);
+}
+.title1 h2{
+    margin-bottom: var(--space-small);
+}
+.title2{
+    text-align: center;
+}
+.title2 h2{
+    margin-bottom: var(--space-small);
+}
+.title3{
+    text-align: center;
+    position: relative;
+}
+.title3 h2{
+    margin-bottom: var(--space-middle);
+}
+.title3::after{
+    content: "";
+    position: absolute;
+    left: calc(50% - 1rem);
+    top: 3.5rem;
+    width: 2rem;
+    height: 0.15rem;
+    background-color: var(--main-color);
+}
+.title4{
+    text-align: center;
+    padding-bottom: 5rem;
+    position: relative;
+}
+.title4:after{
+    content: "";
+    position: absolute;
+    width: 0.2rem;
+    height: 4rem;
+    left: calc(50% = 0.1rem);
+    bottom: 0;
+    background-color: var(--main-color);
+}
+.title4 h2{
+    margin-bottom: var(--space-small);
+}
+.desc1{
+    margin-top: var(--space-large);
+    /* margin-bottom: var(--space-large); */
+}
+
+.commonframe.desc1{
+    margin-top: var(--space-middle);
+    margin-bottom: var(--space-middle);
+    display: flex;
+    gap: 4rem;
+}
+.commonframe.desc1>*{
+    flex: 1;
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: var(--space-middle);
+    
+}
+.txt h3{
+    /* margin-bottom: var(--space-small); */
+    color: var(--main-color);
+}
+.txt p{
+    margin-top: var(--space-small);
+}
+.commonframe.desc2{
+    display: flex;
+    margin-top: var(--space-middle);
+    margin-bottom: var(--space-middle);
+    gap: 4rem;
+    flex-direction: row-reverse;
+}
+.desc2>*{
+    flex: 1;
+}
+
+/*  페이드인아웃 버전  */
+.commonframe.fade{
+    display: flex;
+    margin-top: var(--space-large);
+    margin-bottom: var(--space-large);
+    align-items: flex-end;
+    gap: 4rem;
+}
+.commonframe.fade>*{
+    flex: 1;
+}
+.fade_txt h3{
+    margin-bottom: var(--space-small);
+}
+.fade_txt p{
+    margin: var(--space-small) 0;
+}
+.station4{
+    pointer-events: none;
+}
+.outerframe{
+    padding: var(--space-small);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7) url(../img/Untitled-4.jpg) no-repeat 50% 50% /cover;
+    color: white;
+    background-blend-mode: overlay;
+}
+.outerframe h2{
+    /* display: flex; */
+    justify-content: center;
+}
+.outerframe h2 br{
+    display: none;
+}
+.outerframe img{
+    width: 13rem;
+    height: auto;
+    margin-right: 0.7rem;
+}
+.outerframe .commonframe>*{
+    margin: var(--space-large) 0;
+}
+.outerframe .commonframe>p:nth-last-of-type(){
+    margin-bottom: var(--space-large);
+}
+footer{
+    background-color: black;
+    color: white;
+    padding-top: var(--space-middle);
+    padding-bottom: var(--space-xlarge);
+}
+footer .commonframe{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.foot_sns img{
+    height: 1.5rem;
+}
+.logo_foot img{
+    height: 6rem;
+}
+.foot_menu{
+    margin-bottom: var(--space-middle);
+    display: flex;
+    gap: var(--space-small)
+}
+.info{
+    display: flex;
+    margin-bottom: var(space-small);
+    gap: 0 var(--space-small);
+    flex-wrap: wrap;
+    opacity: 0.8;
+}
+.copy{
+    opacity: 0.8;
+}
+.foot_sns{
+    display: flex;
+    gap: var(--space-small);
+}
+
+.commonframe.ml{
+    margin-top:var(--space-xlarge);
+    margin-bottom: var(--space-large);
+    padding-top: var(--space-xlarge);
+}
+.commonframe.desc3{
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.commonframe.desc3 .txt{
+    flex: 6;
+}
+.commonframe.desc3 figure{
+    flex: 5;
+}
+.commonframe.desc3 figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.commonframe.station5{
+    padding-bottom: var(--space-large);
+}
+.station5 li>*{
+    margin-bottom: var(--space-small);
+}
+.station5 li>*:last-child{
+    margin-bottom: 0;
+}
+.station5 figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.station5.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--main-color);
+}
+.commonframe.station6{
+    padding-bottom: var(--space-large);
+}
+.station6 li>*{
+    margin-bottom: var(--space-small);
+}
+.station6 li>*:last-child{
+    margin-bottom: 0;
+}
+.station6 figure{
+    width: 100%;
+    height: 15rem;
+}
+.station6 figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.station6 li:nth-of-type(3) img{
+    object-position: 0%;
+}
+.station6.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--main-color);
+}
+.commonframe.station7{
+    padding-bottom: var(--space-large);
+}
+.station7 li>*{
+    margin-bottom: var(--space-small);
+}
+.station7 li>*:last-child{
+    margin-bottom: 0;
+}
+.station7 figure{
+    width: 100%;
+    height: 15rem;
+}
+.station7 figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.station7 li:nth-of-type(2) img{
+    object-position: 50% 0;
+}
+.station7.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--main-color);
+}
+.sub_banner{
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 1rem;
+}
+.sub1{
+    /* 서브배너의 배경이미지 교체시 sub2만들어서 이미지만 교체 */
+    background: 
+    linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%,rgba(0,0,0,0)100%),
+    url(../img/subbanner1.jpg) no-repeat 50% 50% /cover;
+    /* 색 뒤에 퍼센트 쓰면 그만큼 크기차지 그라디언트는 이미지로 취급된다 */
+    background-blend-mode: multiply;
+}
+.sub_banner h2{
+    margin-bottom: var(--space-small);
+}
+.notice_form{
+    margin-bottom: var(--space-xlarge);
+}
+.list_table{
+    table-layout: fixed;
+    width: 100%;
+}
+.list_table th{
+    padding: 0.6rem 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.list_table td{
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 0.9rem 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.list_table td:nth-of-type(3){
+    text-align: left;
+}
+.list_table th:last-of-type{
+    width: 15%;
+}
+.list_table th:nth-of-type(4){
+    width: 15%;
+}
+.list_table th:nth-of-type(3){
+    width: 57%;
+}
+.list_table th:nth-of-type(2){
+    width: 7%;
+}
+.list_table th:nth-of-type(1){
+    width: 6%;
+}
+.list_table td a{
+    display: block;
+    /* 말줄임표 하는법 먼저 table에 table-layout fixed해줘야 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.notice_form{
+    margin-bottom: var(--space-small);
+}
+.option_admin{
+    display: none;
+}
+.admin .option_admin{
+    display: flex;
+}
+.cell_admin{
+    display: none;
+}
+.admin .cell_admin{
+    display: table-cell;
+}
+
+.form_title label{
+    display: none;
+}
+.form_title{
+    border-bottom: 1px solid black;
+    margin-bottom: var(--space-small);
+}
+.form_title input{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.5rem;
+    border: none;
+}
+.form_title input::placeholder{
+    color: var(--inactive-color);
+    font-weight: var(--font-medium);
+}
+.form_desc label{
+    display: none;
+}
+textarea{
+    font-size: 0.9rem;
+}
+.form_desc{
+    margin-bottom: var(--space-small);
+    border-bottom: 1px solid black;
+}
+.form_desc textarea{
+    width: 100%;
+    height: 20rem;
+    resize: none;
+    padding: 0.4rem 0.5rem;
+    border: none;
+}
+.form_desc textarea::placeholder{
+    color: var(--inactive-color);
+}
+.form_submit{
+    margin-bottom: var(--space-xlarge);
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background: black;
+    opacity: 0%;
+    /* transition: all 0.4s ease 0s; */
+    pointer-events: none;
+
+}
+.modal.on{
+    opacity: 70%;
+    pointer-events: auto;
+}
+.popups{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 60%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 10000;
+    display: none;
+}
+.popups.on{
+    display: block;
+}
+    
+.popup_title{
+    margin-bottom: var(--space-small);
+}
+.large_margin{
+    margin: var(--space-large) auto;
+}
+.view_info{
+    display: flex;
+    gap: var(--space-small);
+}
+.button_list{
+    gap: var(--space-small);
+}
+.button_list img{
+    height: 1.2rem;
+    object-fit: contain;
+}
+.bb{
+    border-bottom: 1px solid black;
+    padding: 0.5rem 0;
+}
+.view_txt{
+    padding: 0.5rem;
+    min-height: 35rem;
+    margin-bottom: var(--space-small);
+}
+.lmb{
+    margin-bottom: var(--space-large);
+}
+.fixed_menu{
+    position: fixed;
+    z-index: 1000;
+    right: 1rem;
+    bottom: 1rem;
+    transform: translateX(150%);
+    /* transition: all 0.6s ease 0s; */
+}
+.fixed_menu.on{
+    transform: translateX(0);
+}
+.fixed_menu img{
+    height: 1.1rem;
+    object-fit: contain;
+}
+.fixed_menu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    /* background-color: var(--main-color);
+    border-radius: 50%; */
+}
+.fixed_menu li{
+    margin: 0.5rem 0;
+}
+#submit_write{
+    border: none;
+    background-color: var(--main-color);
+}

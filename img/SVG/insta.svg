@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 35.9 35.9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-3 {
+        fill: url(#radial-gradient-2);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="63.65" cy="-3197.68" fx="63.65" fy="-3197.68" r="22.37" gradientTransform="translate(-113.96 -6359.44) scale(2 -2)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fd5"/>
+      <stop offset=".33" stop-color="#ff543f"/>
+      <stop offset=".35" stop-color="#fc5245"/>
+      <stop offset=".5" stop-color="#e64771"/>
+      <stop offset=".64" stop-color="#d53e91"/>
+      <stop offset=".76" stop-color="#cc39a4"/>
+      <stop offset=".84" stop-color="#c837ab"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="59.87" cy="-3869.37" fx="59.87" fy="-3869.37" r="14.86" gradientTransform="translate(-113.96 -5156.77) scale(2 -1.33)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4168c9"/>
+      <stop offset="1" stop-color="#4168c9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="design">
+    <g>
+      <path class="cls-2" d="M27.93,35.88l-19.93,.02c-4.39,0-7.98-3.58-7.98-7.96L0,8C0,3.61,3.58,.02,7.96,.02L27.9,0c4.39,0,7.98,3.58,7.98,7.96l.02,19.93c0,4.39-3.58,7.98-7.96,7.98Z"/>
+      <path class="cls-3" d="M27.93,35.88l-19.93,.02c-4.39,0-7.98-3.58-7.98-7.96L0,8C0,3.61,3.58,.02,7.96,.02L27.9,0c4.39,0,7.98,3.58,7.98,7.96l.02,19.93c0,4.39-3.58,7.98-7.96,7.98Z"/>
+      <path class="cls-1" d="M17.95,24.92c-3.85,0-6.98-3.13-6.98-6.98s3.13-6.98,6.98-6.98,6.98,3.13,6.98,6.98-3.13,6.98-6.98,6.98Zm0-11.96c-2.75,0-4.98,2.24-4.98,4.98s2.24,4.98,4.98,4.98,4.98-2.24,4.98-4.98-2.24-4.98-4.98-4.98Z"/>
+      <circle class="cls-1" cx="25.42" cy="10.47" r="1.49"/>
+      <path class="cls-1" d="M23.93,30.9H11.97c-3.85,0-6.98-3.13-6.98-6.98V11.97c0-3.85,3.13-6.98,6.98-6.98h11.96c3.85,0,6.98,3.13,6.98,6.98v11.96c0,3.85-3.13,6.98-6.98,6.98ZM11.97,6.99c-2.75,0-4.98,2.24-4.98,4.98v11.96c0,2.75,2.24,4.98,4.98,4.98h11.96c2.75,0,4.98-2.24,4.98-4.98V11.97c0-2.75-2.24-4.98-4.98-4.98H11.97Z"/>
+    </g>
+  </g>
+</svg>
